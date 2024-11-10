@@ -1,0 +1,76 @@
+/* About.css - About Section Styling */
+
+.about {
+    background-color: #1a202c; /* Dark background */
+    color: #e2e8f0; /* Light text color */
+    padding: 60px 20px;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .about-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    color: #edf2f7; /* Light title color */
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .about-description {
+    font-size: 1.125rem;
+    color: #cbd5e0; /* Light description color */
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Responsive Adjustments */
+  
+  @media (max-width: 1024px) {
+    .about-title {
+      font-size: 2rem;
+    }
+    .about-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-image {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 1.75rem;
+    }
+    .about-description {
+      font-size: 0.95rem;
+    }
+  }
+  

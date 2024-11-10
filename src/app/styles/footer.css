@@ -1,0 +1,85 @@
+/* Basic Footer Styling */
+.footer {
+    background-color: #121212; 
+    color: #a0a0a0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Address Section */
+.footer-logo {
+    text-align: center;
+}
+
+.footer-address {
+    font-style: italic;
+    margin: 0;
+}
+
+/* Links Section */
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Display links in a column */
+    gap: 0.5rem; /* Space between each link */
+    align-items: center;
+}
+
+.footer-link {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+/* Newsletter Section */
+.newsletter-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.subscribe-button {
+    color: #a0a0a0;
+    background: none;
+    border: 1px solid #a0a0a0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #a0a0a0;
+    color: #121212;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsive Layout for Larger Screens */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-logo, .footer-links, .footer-newsletter {
+        text-align: left;
+    }
+}
